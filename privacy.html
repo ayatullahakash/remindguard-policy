@@ -57,6 +57,7 @@ Last updated: 14 November 2026 · Effective: 14 November 2026</p>
 
 <h3>4.6 Account and device information</h3>
 <p>When you are signed in, your account record on our servers also holds: the <strong>country code</strong> of the country your phone is in (from the SIM card or mobile network, otherwise the time zone), used to show the right plan prices and to count users by country; the time you last opened the app; a random <strong>session code</strong> that keeps your account signed in on one phone at a time (signing in on a new phone signs the old one out); and, if notifications are on, a <strong>message token</strong> for your phone (a random code from Google Firebase Cloud Messaging) so that we can send you messages. The message token is removed when you sign out. None of this is used for advertising.</p>
+<p>The account record also holds your <strong>invite code</strong> (a short random code you can share with friends), the id of the person who invited you if you used their code, and how many friends joined with your code. If the app stops working (a crash), <strong>anonymous crash reports</strong> are sent to Google Firebase Crashlytics: technical details such as the phone model, Android version, app version and what the app was doing when it failed, together with a random installation id. They contain no names, notes, tasks or documents, and they are used only to find and fix problems.</p>
 
 <h2>5. Where your information is stored</h2>
 <p><strong>Your notes, tasks, habits and settings are stored on your own phone</strong>, in the app's local storage on the device. When you are signed in, a copy of them is also saved as a private backup on our servers (Google Firebase), so you can restore them on a new phone. Only you can read that backup. RemindGuard works without an internet connection: everything you create is saved on your phone first, and reminders and alarms ring from the phone itself. Whatever was changed while you were offline is sent to your private backup automatically the next time the phone is online. You can also export a backup file and save or share it yourself, to a place you choose; if you later restore from such a file, you import a file that you hold.</p>
@@ -68,7 +69,10 @@ Last updated: 14 November 2026 · Effective: 14 November 2026</p>
 <li>To send the reminder notifications you scheduled, at the times you set, showing the task or document name.</li>
 <li>To display your signed-in profile (name, email, profile photo).</li>
 <li>To apply your plan's limits and features.</li>
-<li>To tell you when your plan starts, changes or ends.</li>
+<li>To tell you when your plan starts, changes or ends, and to remind you two days before a Google Play subscription renews.</li>
+<li>To show a short summary of your day (your tasks and documents expiring soon) every morning at 8:00. It is made on your phone from the data on your phone, and you can turn it off in Settings.</li>
+<li>To run the invite-a-friend offer (each of you gets 7 days of Pro) and to prevent misuse of it.</li>
+<li>To find and fix crashes, with the anonymous crash reports described in section 4.6.</li>
 <li>To remind you to come back: if you have not opened the app for about 3 or 7 days, your phone shows a short message (this is set on the phone itself; nothing is sent from a server for it).</li>
 <li>To send you occasional messages about RemindGuard (for example offers or news) to your phone. For this, the message token described in section 4.6 is used. You can stop all of these messages by turning off notifications for the app in your phone settings.</li>
 <li>To keep the app working correctly (for example, restoring your settings after an update).</li>
@@ -79,7 +83,7 @@ Last updated: 14 November 2026 · Effective: 14 November 2026</p>
 <ul>
 <li><strong>Google Sign-In</strong> — Google provides the sign-in screen and passes us the profile name, email and profile photo described above.</li>
 <li><strong>Google Play</strong> — Google processes paid purchases and provides us with your plan status.</li>
-<li><strong>Google Firebase</strong> — our servers run on Google Firebase (sign-in, database, server functions and message delivery). It processes the information in sections 4.2, 4.6 and 5 on our behalf, under Google's terms.</li>
+<li><strong>Google Firebase</strong> — our servers run on Google Firebase (sign-in, database, server functions, message delivery and crash reports). It processes the information in sections 4.2, 4.6 and 5 on our behalf, under Google's terms.</li>
 <li><strong>Your own exports</strong> — if you export a backup and send it somewhere (for example to your own cloud drive or email), that destination's privacy policy applies to your copy.</li>
 <li><strong>Legal requirements</strong> — we may disclose information if required by law, a court order, or to protect the rights and safety of users.</li>
 </ul>
@@ -89,6 +93,7 @@ Last updated: 14 November 2026 · Effective: 14 November 2026</p>
 <li><strong>Camera</strong> — only when you choose to photograph a document so the app can read its dates. The photo is deleted after you confirm the extracted dates (section 3). You can deny this permission and use manual entry instead.</li>
 <li><strong>Notifications</strong> — so reminders can be delivered as push notifications. You can turn notifications off in your phone's settings at any time; the app will still keep your notes and dates.</li>
 <li><strong>Alarms &amp; reminders, and full-screen alerts</strong> — so that reminders ring at the exact minute, even when the phone is idle or locked. The phone may show its alarm icon while a reminder is waiting. You can change these in your phone settings; reminders may then arrive late.</li>
+<li><strong>Fingerprint, face or screen lock</strong> (optional) — only if you turn on "App lock" in Settings: the app asks your phone to unlock it. The app never receives or stores your fingerprint or face; this setting stays on your phone.</li>
 <li><strong>Location</strong> (optional) — only while you record an Activity (section 4.5).</li>
 <li><strong>Internet</strong> — to sign in, keep your backup, check purchases and plan prices, and receive messages. The app's main features work without it.</li>
 <li><strong>Microphone</strong> (optional, where offered) — only while you use voice input to dictate a task or note. You can deny it and type instead.</li>
@@ -118,7 +123,8 @@ Last updated: 14 November 2026 · Effective: 14 November 2026</p>
 <li>View the app without signing in (read-only demo) before deciding.</li>
 <li>Edit or delete any note, task, habit or member at any time inside the app.</li>
 <li>Export your data (paid plans) to keep your own copy.</li>
-<li>Turn off notifications in your device settings.</li>
+<li>Turn off notifications in your device settings, or switch off the daily summary in Settings.</li>
+<li>Turn on the app lock in Settings to protect the app with your fingerprint, face or screen lock.</li>
 <li>Sign out, clear app data, or uninstall to remove local data from the device.</li>
 </ul>
 
