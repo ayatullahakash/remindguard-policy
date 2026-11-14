@@ -16,7 +16,7 @@ ul{padding-left:24px} li{margin-bottom:6px} nav{margin:16px 0} nav a{margin-righ
 <nav><a href="index.html">RemindGuard</a> <a href="terms.html">Terms of Service</a></nav>
 <h1>Privacy Policy</h1>
 <p class="meta">RemindGuard (Android package: com.ayatullah.remindguard.app)<br />
-Last updated: 12 November 2026 · Effective: 12 November 2026</p>
+Last updated: 14 November 2026 · Effective: 14 November 2026</p>
 
 <h2>1. Who we are</h2>
 <p>RemindGuard (“RemindGuard”, “the app”, “we”, “us”) is developed and operated by Md. Ayatullah Siddique (Ayatullah Tech), reachable at ayatullah.akash@gmail.com, Talsar, Jhenaidah 7330, Bangladesh. This policy explains what information the app handles, where it is kept, and the choices you have.</p>
@@ -35,7 +35,8 @@ Last updated: 12 November 2026 · Effective: 12 November 2026</p>
 <ul>
 <li><strong>Document notes</strong> — a title (for example “Passport — Ayesha”), issue and expiry dates, an optional renewal note, and the family member the note belongs to.</li>
 <li><strong>Tasks</strong> — task names, reminder times, and repeat patterns you set (daily, weekly on chosen days, or every few days, for example medicine every 3 days).</li>
-<li><strong>Habits</strong> (Pro feature) — habit names, goals, schedules, check-ins, streaks and notes you record.</li>
+<li><strong>Notes</strong> — text or checklists you write, with a colour, an optional pin, an optional reminder time (the app rings an alarm then) and an archive flag.</li>
+<li><strong>Routines</strong> (paid feature, also called habits) — routine names, goals, schedules, check-ins, streaks and notes you record.</li>
 <li><strong>Family member names</strong> — names or labels you type in for the people whose documents and tasks you track. Adding members is optional; a single user can keep everything under their own profile.</li>
 <li><strong>Settings</strong> — your language, theme, reminder-assistant style, plan, and preferences.</li>
 </ul>
@@ -43,7 +44,7 @@ Last updated: 12 November 2026 · Effective: 12 November 2026</p>
 <p>If you sign in with Google, the app receives only your Google account's <strong>profile name, email address, and profile photo</strong>, and shows them in the app (for example in the header and Settings) so you can see which account you are using. We do not receive your Google password, and we do not access your Gmail, Drive, photos, or any other Google account content. Signing in is handled by Google; Google's own privacy policy applies to that step.</p>
 <p>You can also open the app without signing in (“view without login”) to look around a read-only demo. In that guest/demo view no personal information is collected from you, and actions such as adding or editing are disabled until you sign in.</p>
 <h3>4.3 Subscription information</h3>
-<p>If you buy a paid plan, the purchase itself is processed by Google Play. We receive and keep your plan status (Free, Essential or Pro) and its renewal/expiry state so the app can unlock the right features. We do not receive or store your card or bank details. Paid plan prices depend on your country and are shown by Google Play at checkout (see the Terms of Service).</p>
+<p>If you buy a paid plan, the purchase itself is processed by Google Play. We receive and keep your plan status (Free, Essential, Pro or a custom document plan), its end date and a Google Play purchase token, so the app can unlock the right features, show you when your plan ends, and keep it correct when Google Play reports a renewal, cancellation or refund. We do not receive or store your card or bank details. Paid plan prices depend on your country and are shown by Google Play at checkout (see the Terms of Service).</p>
 <h3>4.5 Location (Activity tracking only)</h3>
 <p>If you choose to record an Activity, RemindGuard asks for your phone's location permission and uses your precise location, <strong>only while a recording is running</strong>, to draw the route and work out distance, pace and speed. A notification is shown while it runs. The route and results are kept in your activity history <strong>on your phone only</strong>: they are not uploaded to our servers, not part of your account backup, and not shared with anyone unless you tap Share on a card. You can stop recording at any time, delete any activity from the history, or turn the permission off in your phone settings; the rest of the app works without it.</p>
 <h3>4.4 Information we do not collect</h3>
@@ -54,8 +55,11 @@ Last updated: 12 November 2026 · Effective: 12 November 2026</p>
 <li>No advertising identifiers. <strong>RemindGuard shows no regular ads</strong> and contains no advertising SDKs.</li>
 </ul>
 
+<h3>4.6 Account and device information</h3>
+<p>When you are signed in, your account record on our servers also holds: the <strong>country code</strong> of the country your phone is in (from the SIM card or mobile network, otherwise the time zone), used to show the right plan prices and to count users by country; the time you last opened the app; a random <strong>session code</strong> that keeps your account signed in on one phone at a time (signing in on a new phone signs the old one out); and, if notifications are on, a <strong>message token</strong> for your phone (a random code from Google Firebase Cloud Messaging) so that we can send you messages. The message token is removed when you sign out. None of this is used for advertising.</p>
+
 <h2>5. Where your information is stored</h2>
-<p><strong>Your notes, tasks, habits and settings are stored on your own phone</strong>, in the app's local storage on the device. When you are signed in, a copy of them is also saved as a private backup on our servers (Google Firebase), so you can restore them on a new phone. Only you can read that backup. You can also export a backup file and save or share it yourself, to a place you choose; if you later restore from such a file, you import a file that you hold.</p>
+<p><strong>Your notes, tasks, habits and settings are stored on your own phone</strong>, in the app's local storage on the device. When you are signed in, a copy of them is also saved as a private backup on our servers (Google Firebase), so you can restore them on a new phone. Only you can read that backup. RemindGuard works without an internet connection: everything you create is saved on your phone first, and reminders and alarms ring from the phone itself. Whatever was changed while you were offline is sent to your private backup automatically the next time the phone is online. You can also export a backup file and save or share it yourself, to a place you choose; if you later restore from such a file, you import a file that you hold.</p>
 <p>Uninstalling the app, or clearing the app's data in your phone's settings, deletes the locally stored information from that device.</p>
 
 <h2>6. How information is used</h2>
@@ -64,6 +68,9 @@ Last updated: 12 November 2026 · Effective: 12 November 2026</p>
 <li>To send the reminder notifications you scheduled, at the times you set, showing the task or document name.</li>
 <li>To display your signed-in profile (name, email, profile photo).</li>
 <li>To apply your plan's limits and features.</li>
+<li>To tell you when your plan starts, changes or ends.</li>
+<li>To remind you to come back: if you have not opened the app for about 3 or 7 days, your phone shows a short message (this is set on the phone itself; nothing is sent from a server for it).</li>
+<li>To send you occasional messages about RemindGuard (for example offers or news) to your phone. For this, the message token described in section 4.6 is used. You can stop all of these messages by turning off notifications for the app in your phone settings.</li>
 <li>To keep the app working correctly (for example, restoring your settings after an update).</li>
 </ul>
 
@@ -72,6 +79,7 @@ Last updated: 12 November 2026 · Effective: 12 November 2026</p>
 <ul>
 <li><strong>Google Sign-In</strong> — Google provides the sign-in screen and passes us the profile name, email and profile photo described above.</li>
 <li><strong>Google Play</strong> — Google processes paid purchases and provides us with your plan status.</li>
+<li><strong>Google Firebase</strong> — our servers run on Google Firebase (sign-in, database, server functions and message delivery). It processes the information in sections 4.2, 4.6 and 5 on our behalf, under Google's terms.</li>
 <li><strong>Your own exports</strong> — if you export a backup and send it somewhere (for example to your own cloud drive or email), that destination's privacy policy applies to your copy.</li>
 <li><strong>Legal requirements</strong> — we may disclose information if required by law, a court order, or to protect the rights and safety of users.</li>
 </ul>
@@ -80,6 +88,9 @@ Last updated: 12 November 2026 · Effective: 12 November 2026</p>
 <ul>
 <li><strong>Camera</strong> — only when you choose to photograph a document so the app can read its dates. The photo is deleted after you confirm the extracted dates (section 3). You can deny this permission and use manual entry instead.</li>
 <li><strong>Notifications</strong> — so reminders can be delivered as push notifications. You can turn notifications off in your phone's settings at any time; the app will still keep your notes and dates.</li>
+<li><strong>Alarms &amp; reminders, and full-screen alerts</strong> — so that reminders ring at the exact minute, even when the phone is idle or locked. The phone may show its alarm icon while a reminder is waiting. You can change these in your phone settings; reminders may then arrive late.</li>
+<li><strong>Location</strong> (optional) — only while you record an Activity (section 4.5).</li>
+<li><strong>Internet</strong> — to sign in, keep your backup, check purchases and plan prices, and receive messages. The app's main features work without it.</li>
 <li><strong>Microphone</strong> (optional, where offered) — only while you use voice input to dictate a task or note. You can deny it and type instead.</li>
 </ul>
 
@@ -87,7 +98,7 @@ Last updated: 12 November 2026 · Effective: 12 November 2026</p>
 <ul>
 <li><strong>Document photos:</strong> not kept at all — deleted as soon as you confirm the extracted dates.</li>
 <li><strong>On your phone:</strong> notes, tasks, habits, documents' dates and settings stay until you delete them in the app, clear the app's data, or uninstall the app.</li>
-<li><strong>Our servers (your account and cloud backup):</strong> your sign-in details (name, email, profile photo), your country code, your plan and purchase information, and your private backup stay for as long as your account exists. We do not delete accounts automatically for being inactive. Each backup replaces the one before it; we do not keep older versions.</li>
+<li><strong>Our servers (your account and cloud backup):</strong> your sign-in details (name, email, profile photo), your country code, your plan and purchase information, and your private backup stay for as long as your account exists (your message token is removed when you sign out). We do not delete accounts automatically for being inactive. Each backup replaces the one before it; we do not keep older versions.</li>
 <li><strong>Activity history:</strong> the app keeps your 300 most recent activities (walks, runs, hikes); older ones are removed automatically. Routes and activity photos stay on your phone.</li>
 <li><strong>Change history:</strong> the app's timeline of adds, edits and completions keeps the latest 200 entries; older entries are removed automatically.</li>
 <li><strong>Finished tasks:</strong> a one-day task you chose not to keep is removed once its day has passed. Any other task that is over (a one-day task, or a repeating task past its end date) is kept for 30 days after its last day and then removed automatically, together with its “done” marks.</li>
